@@ -51,7 +51,7 @@ COLORS = {
 }
 
 # Set up icon paths - fallback to letter icons if images not found
-ICON_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icons")
+ICON_FOLDER = os.path.expanduser("~/.local/share/icons")
 os.makedirs(ICON_FOLDER, exist_ok=True)
 
 # Main window
