@@ -98,3 +98,7 @@ chatbox.tag_config("user", foreground="#007FFF")
 chatbox.tag_config("bot", foreground="#008000")
 
 app.mainloop()
+
+
+
+
