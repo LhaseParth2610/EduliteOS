@@ -1,0 +1,16 @@
+[Sun Apr  6 00:14:06 2025] Activating Exam Mode...
+[Sun Apr  6 00:14:06 2025] Simulating: Setting fullscreen and locking window focus
+[Sun Apr  6 00:14:06 2025] Simulating: Blocking keyboard shortcuts (Alt+Tab, Ctrl+Alt+Del)
+[Sun Apr  6 00:14:06 2025] Simulating: Restricting processes to exam app only
+[Sun Apr  6 00:14:06 2025] Monitoring processes... (Allowed: exam_app)
+[Sun Apr  6 00:14:06 2025] Simulating: Terminating unauthorized process 'firefox'
+[Sun Apr  6 00:14:11 2025] Monitoring processes... (Allowed: exam_app)
+[Sun Apr  6 00:14:11 2025] Simulating: Terminating unauthorized process 'firefox'
+[Sun Apr  6 00:14:16 2025] Monitoring processes... (Allowed: exam_app)
+[Sun Apr  6 00:14:16 2025] Simulating: Terminating unauthorized process 'firefox'
+[Sun Apr  6 00:14:16 2025] Deactivating Exam Mode...
+[Sun Apr  6 00:14:16 2025] Simulating: Restoring window state
+[Sun Apr  6 00:14:16 2025] Simulating: Re-enabling keyboard shortcuts
+[Sun Apr  6 00:14:16 2025] Simulating: Restoring process access
+[Sun Apr  6 00:14:16 2025] Simulating: Saving student answers {0: 1, 1: 1}
+[Sun Apr  6 00:14:16 2025] Score: 2/2

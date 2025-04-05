@@ -1,0 +1,7 @@
+{
+    "questions": [
+        {"text": "What is 2 + 2?", "options": ["2", "4", "6", "8"], "correct": 1},
+        {"text": "What is 3 + 3?", "options": ["3", "6", "9", "12"], "correct": 1}
+    ],
+    "duration": 120
+}
