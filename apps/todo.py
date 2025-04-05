@@ -216,7 +216,7 @@ class MainScreen(ctk.CTk):
         ctk.set_default_color_theme("blue")
 
         # Load and set blurred background image for the entire app
-        self.bg_image = Image.open("background.jpg")  # Replace with your image path
+        self.bg_image = Image.open("apps/background.jpg")  # Replace with your image path
         self.bg_image = self.bg_image.resize((1000, 600), Image.Resampling.LANCZOS)
         self.bg_image = self.bg_image.filter(ImageFilter.GaussianBlur(radius=5))  # Apply blur
         self.bg_photo = ImageTk.PhotoImage(self.bg_image)
