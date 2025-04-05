@@ -1,0 +1,35 @@
+{
+  "title": "Test 7",
+  "questions": [
+    {
+      "text": "What is the capital of France?",
+      "options": [
+        "Paris",
+        "London",
+        "Berlin",
+        "Rome"
+      ],
+      "correct": 0
+    },
+    {
+      "text": "Which planet is known as the Red Planet?",
+      "options": [
+        "Earth",
+        "Venus",
+        "Mars",
+        "Jupiter"
+      ],
+      "correct": 2
+    },
+    {
+      "text": "What is H2O commonly known as?",
+      "options": [
+        "Hydrogen",
+        "Oxygen",
+        "Salt",
+        "Water"
+      ],
+      "correct": 3
+    }
+  ]
+}
