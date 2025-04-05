@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "What is H2O?",
+            "options": [
+                "Oxygen",
+                "Hydrogen",
+                "Water",
+                "Salt"
+            ],
+            "correct": "Water"
+        },
+        {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "options": [
+                "Shakespeare",
+                "Charles Dickens",
+                "J.K. Rowling",
+                "Mark Twain"
+            ],
+            "correct": "Shakespeare"
+        },
+        {
+            "question": "What is the square root of 64?",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct": "8"
+        },
+        {
+            "question": "What is the capital of France?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ],
+            "correct": "Paris"
+        },
+        {
+            "question": "Which language is used for web development?",
+            "options": [
+                "Python",
+                "HTML",
+                "Java",
+                "C++"
+            ],
+            "correct": "HTML"
+        }
+    ]
+}

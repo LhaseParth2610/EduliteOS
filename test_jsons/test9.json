@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "options": [
+                "Earth",
+                "Mars",
+                "Venus",
+                "Jupiter"
+            ],
+            "correct": "Mars"
+        },
+        {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "options": [
+                "Shakespeare",
+                "Charles Dickens",
+                "J.K. Rowling",
+                "Mark Twain"
+            ],
+            "correct": "Shakespeare"
+        },
+        {
+            "question": "How many continents are there?",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "correct": "7"
+        },
+        {
+            "question": "What is the chemical symbol for Gold?",
+            "options": [
+                "Gd",
+                "Au",
+                "Ag",
+                "Go"
+            ],
+            "correct": "Au"
+        },
+        {
+            "question": "What is the square root of 64?",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct": "8"
+        }
+    ]
+}
