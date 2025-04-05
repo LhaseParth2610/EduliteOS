@@ -1,11 +1,9 @@
-import tkinter as tk
-from tkinter import messagebox
-from tkinter import ttk
+import customtkinter as ctk
 import time
 import threading
 import os
-import json
 import hashlib
+from tkinter import messagebox
 
 # Simulated state variables
 lab_mode_active = False
@@ -13,7 +11,7 @@ end_time = 0
 monitoring_running = False
 LOG_FILE = "lab_mode_simulation.log"  # Temporary log file for simulation
 
-# Simulated configuration (normally from /etc/lab_mode_config.json)
+# Simulated configuration
 CONFIG = {
     "password": hashlib.sha256("labpass".encode()).hexdigest(),  # Default password: "labpass"
     "restrictions": {
@@ -53,7 +51,6 @@ def revert_restrictions():
 def process_monitor():
     while monitoring_running:
         log_action("Monitoring processes... (Allowed: " + ", ".join(CONFIG["restrictions"]["apps"]) + ")")
-        # Simulate killing unauthorized processes
         log_action("Simulating: Terminating unauthorized process 'chrome.exe'")
         time.sleep(5)
 
@@ -92,7 +89,7 @@ def toggle_lab_mode():
             messagebox.showinfo("Success", "Lab Mode activated (simulated).")
         else:
             messagebox.showinfo("Cancelled", "No changes made.")
-    password_entry.delete(0, tk.END)
+    password_entry.delete(0, "end")
 
 # Auto-deactivate when time limit is reached
 def auto_deactivate():
@@ -106,12 +103,12 @@ def auto_deactivate():
 # Update UI
 def update_ui():
     if lab_mode_active:
-        status_label.config(text="Lab Mode: Active", fg="red")
-        action_button.config(text="Deactivate Lab Mode")
+        status_label.configure(text="Lab Mode: Active", text_color="#FF5555")  # Red for active
+        action_button.configure(text="Deactivate Lab Mode", fg_color="#FF5555", hover_color="#CC4444")
     else:
-        status_label.config(text="Lab Mode: Inactive", fg="green")
-        action_button.config(text="Activate Lab Mode")
-        timer_label.config(text="")
+        status_label.configure(text="Lab Mode: Inactive", text_color="#55AA55")  # Green for inactive
+        action_button.configure(text="Activate Lab Mode", fg_color="#E95420", hover_color="#CF4B1E")
+        timer_label.configure(text="")
 
 # Update timer display
 def update_timer():
@@ -119,10 +116,10 @@ def update_timer():
         remaining = end_time - time.time()
         if remaining > 0:
             mins, secs = divmod(int(remaining), 60)
-            timer_label.config(text=f"Time remaining: {mins:02d}:{secs:02d}")
+            timer_label.configure(text=f"Time remaining: {mins:02d}:{secs:02d}")
             root.after(1000, update_timer)
         else:
-            timer_label.config(text="")
+            timer_label.configure(text="")
 
 # Handle window close
 def on_closing():
@@ -137,48 +134,85 @@ def on_closing():
         root.destroy()
 
 # Initialize main window
-root = tk.Tk()
+ctk.set_appearance_mode("light")  # Light theme to match Ubuntu
+ctk.set_default_color_theme("dark-blue")  # Base theme (customized below)
+root = ctk.CTk()
 root.title("Lab Mode Control (Simulation)")
-root.geometry("400x250")
-root.configure(bg="#f6f6f6")
+root.geometry("400x300")
 root.resizable(False, False)
 
-# Ubuntu-style fonts and colors
-FONT_HEADER = ("Ubuntu", 16, "bold")
-FONT_BODY = ("Ubuntu", 11)
-FONT_INFO = ("Ubuntu", 10)
-ACCENT_COLOR = "#E95420"  # Ubuntu orange
-
-# Style configuration for ttk widgets
-style = ttk.Style()
-style.configure("TButton", font=("Ubuntu", 11, "bold"), background=ACCENT_COLOR, foreground="white", padding=8)
-style.map("TButton", background=[("active", "#CF4B1E")])
+# Custom styling
+root.configure(fg_color="#F0F0F0")  # Ubuntu light gray background
 
 # Header Label
-title = tk.Label(root, text="🔬 Lab Mode", font=FONT_HEADER, fg="#333", bg="#f6f6f6")
-title.pack(pady=(20, 5))
+title_label = ctk.CTkLabel(
+    root,
+    text="🔬 Lab Mode",
+    font=("Ubuntu", 20, "bold"),
+    text_color="#333333"
+)
+title_label.pack(pady=(20, 10))
 
 # Status Label
-status_label = tk.Label(root, text="Lab Mode: Inactive", font=FONT_BODY, fg="green", bg="#f6f6f6")
+status_label = ctk.CTkLabel(
+    root,
+    text="Lab Mode: Inactive",
+    font=("Ubuntu", 14),
+    text_color="#55AA55"  # Green initially
+)
 status_label.pack(pady=5)
 
-# Password Entry
-password_frame = tk.Frame(root, bg="#f6f6f6")
-password_frame.pack(pady=10)
-tk.Label(password_frame, text="Password:", font=FONT_BODY, bg="#f6f6f6").pack(side="left", padx=5)
-password_entry = tk.Entry(password_frame, show="*", font=FONT_BODY)
+# Password Entry Frame
+password_frame = ctk.CTkFrame(root, fg_color="#F0F0F0")
+password_frame.pack(pady=15)
+ctk.CTkLabel(
+    password_frame,
+    text="Password:",
+    font=("Ubuntu", 12),
+    text_color="#333333"
+).pack(side="left", padx=5)
+password_entry = ctk.CTkEntry(
+    password_frame,
+    show="*",
+    font=("Ubuntu", 12),
+    width=150,
+    placeholder_text="Enter password",
+    fg_color="#FFFFFF",
+    text_color="#333333",
+    border_color="#AEA79F"
+)
 password_entry.pack(side="left", padx=5)
 
 # Action Button
-action_button = ttk.Button(root, text="Activate Lab Mode", style="TButton", command=toggle_lab_mode)
-action_button.pack(pady=10)
+action_button = ctk.CTkButton(
+    root,
+    text="Activate Lab Mode",
+    font=("Ubuntu", 12, "bold"),
+    fg_color="#E95420",  # Ubuntu orange
+    hover_color="#CF4B1E",
+    text_color="white",
+    command=toggle_lab_mode,
+    corner_radius=10,
+    width=200
+)
+action_button.pack(pady=15)
 
 # Timer Label
-timer_label = tk.Label(root, text="", font=FONT_INFO, fg="#333", bg="#f6f6f6")
+timer_label = ctk.CTkLabel(
+    root,
+    text="",
+    font=("Ubuntu", 12),
+    text_color="#333333"
+)
 timer_label.pack(pady=5)
 
 # Info Label
-info_label = tk.Label(root, text="Password: 'labpass' (for simulation)", font=FONT_INFO, fg="#555", bg="#f6f6f6")
+info_label = ctk.CTkLabel(
+    root,
+    text="Password: 'labpass' (for simulation)",
+    font=("Ubuntu", 10),
+    text_color="#555555"
+)
 info_label.pack(pady=5)
 
 # Set initial state
