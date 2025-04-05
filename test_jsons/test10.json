@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "options": [
+                "Shakespeare",
+                "Charles Dickens",
+                "J.K. Rowling",
+                "Mark Twain"
+            ],
+            "correct": "Shakespeare"
+        },
+        {
+            "question": "Which organ pumps blood?",
+            "options": [
+                "Liver",
+                "Brain",
+                "Heart",
+                "Lung"
+            ],
+            "correct": "Heart"
+        },
+        {
+            "question": "What is the square root of 64?",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct": "8"
+        },
+        {
+            "question": "What is the capital of France?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ],
+            "correct": "Paris"
+        },
+        {
+            "question": "How many continents are there?",
+            "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "correct": "7"
+        }
+    ]
+}

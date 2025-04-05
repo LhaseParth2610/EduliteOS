@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "What is H2O?",
+            "options": [
+                "Oxygen",
+                "Hydrogen",
+                "Water",
+                "Salt"
+            ],
+            "correct": "Water"
+        },
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "options": [
+                "Earth",
+                "Mars",
+                "Venus",
+                "Jupiter"
+            ],
+            "correct": "Mars"
+        },
+        {
+            "question": "What does CPU stand for?",
+            "options": [
+                "Central Processing Unit",
+                "Computer Power Unit",
+                "Control Program Unit",
+                "Central Print Unit"
+            ],
+            "correct": "Central Processing Unit"
+        },
+        {
+            "question": "What is the capital of France?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ],
+            "correct": "Paris"
+        },
+        {
+            "question": "What is the square root of 64?",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct": "8"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "What is the square root of 64?",
+            "options": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correct": "8"
+        },
+        {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "options": [
+                "Shakespeare",
+                "Charles Dickens",
+                "J.K. Rowling",
+                "Mark Twain"
+            ],
+            "correct": "Shakespeare"
+        },
+        {
+            "question": "Which language is used for web development?",
+            "options": [
+                "Python",
+                "HTML",
+                "Java",
+                "C++"
+            ],
+            "correct": "HTML"
+        },
+        {
+            "question": "What does CPU stand for?",
+            "options": [
+                "Central Processing Unit",
+                "Computer Power Unit",
+                "Control Program Unit",
+                "Central Print Unit"
+            ],
+            "correct": "Central Processing Unit"
+        },
+        {
+            "question": "What is H2O?",
+            "options": [
+                "Oxygen",
+                "Hydrogen",
+                "Water",
+                "Salt"
+            ],
+            "correct": "Water"
+        }
+    ]
+}

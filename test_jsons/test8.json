@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "Which planet is known as the Red Planet?",
+            "options": [
+                "Earth",
+                "Mars",
+                "Venus",
+                "Jupiter"
+            ],
+            "correct": "Mars"
+        },
+        {
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "options": [
+                "Shakespeare",
+                "Charles Dickens",
+                "J.K. Rowling",
+                "Mark Twain"
+            ],
+            "correct": "Shakespeare"
+        },
+        {
+            "question": "Which organ pumps blood?",
+            "options": [
+                "Liver",
+                "Brain",
+                "Heart",
+                "Lung"
+            ],
+            "correct": "Heart"
+        },
+        {
+            "question": "Which language is used for web development?",
+            "options": [
+                "Python",
+                "HTML",
+                "Java",
+                "C++"
+            ],
+            "correct": "HTML"
+        },
+        {
+            "question": "What is the capital of France?",
+            "options": [
+                "Paris",
+                "London",
+                "Berlin",
+                "Madrid"
+            ],
+            "correct": "Paris"
+        }
+    ]
+}
