@@ -40,7 +40,7 @@
 ## 💾 Installation Steps
 
 1. 🔗 **Download ISO from the Official Website**  
-   Visit: [[https://edulite-os.github.io](https://edulite-os-showcase.vercel.app/)]([https://edulite-os.github.io](https://edulite-os-showcase.vercel.app/))
+   Visit: [[https://edulite-os.github.io](https://edulite-os-showcase.vercel.app/)]
 
 2. 💿 **Create Bootable USB**  
    Use tools like **Rufus (Windows)** or **balenaEtcher (Linux/Mac)** to flash the ISO to a USB drive.
