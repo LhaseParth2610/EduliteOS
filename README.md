@@ -1,17 +1,17 @@
 
 # 🐧 EduLite OS
 
-**EduLite OS** is a lightweight, Debian-based Linux operating system tailored for educational use, especially on **low-end hardware (≤1GB RAM)**. It comes pre-installed with essential offline learning tools, teacher dashboards, and Python educational apps — all optimized for speed and simplicity.
+**EduLite OS** is a lightweight, ubuntu-based Linux operating system tailored for educational use, especially on **low-end hardware (≤2GB RAM)**. It comes pre-installed with essential offline learning tools, teacher dashboards, Kolibri, and Python educational apps — all optimized for speed and simplicity.
 
 ---
 
 ## ✨ Features
 
 - 🚀 **Runs on Low-End PCs** (≤2GB RAM)
-- 🎓 **Offline Learning Tools** (No internet required)
+- 🎓 **Offline Learning Tools** including **Kolibri**
 - 🐍 **Custom Python Apps** for interactive learning
 - 💡 **Simple, Colorful UI** using LXQt
-- ⚡ **Optimized with ZRAM** and minimal services
+- ⚡ **Optimized with ZRAM** and minimal background services
 
 ---
 
@@ -19,11 +19,11 @@
 
 | Component           | Details                             |
 |--------------------|--------------------------------------|
-| Base OS            | Debian                              |
+| Base OS            | Xubuntu                              |
 | Desktop Environment| LXQt                                 |
 | Package Manager    | `apt`                                |
 | Performance Boost  | ZRAM, systemd tweaks                 |
-| Offline Tools      |Custom Python,educational apps,Kolibri|
+| Offline Tools      | Kolibri, Custom Python educational apps |
 
 ---
 
@@ -35,7 +35,6 @@
 /usr/share/applications/edu-os/     # Custom .desktop files  
 ```
 
----
 ---
 
 ## 💾 Installation Steps
@@ -55,21 +54,35 @@
 
 ---
 
-
----
-
 ## 📸 Screenshots
 
-> _Coming soon..._
+### 🖥️ Welcome Screen
+![Welcome](ss/welcome.jpeg)
+
+### ✅ Simple Desktop UI
+![Desktop](ss/desktop.jpeg)
+
+### 📚 Offline Learning with Chatbot *(Future Scope UI Preview)*
+![Chatbot Preview 1](ss/chatbot1.png)
+![Chatbot Preview 2](ss/chatbot2.jpeg)
+
+### 📝 Exam/Test Mode Interface
+![Test Mode 1](ss/test-mode1.jpeg)
+![Test Mode 2](ss/test-mode2.jpeg)
+
+
+### 🗒️ To-Do & Study Tracker
+![To-Do App](ss/todo-app.jpeg)
 
 ---
 
 ## 📈 Roadmap
 
 - [x] Offline Learning Modules  
+- [x] Kolibri Integration  
 - [x] Teacher Control Panel  
-- [x] Low RAM Optimization
-- [x] Exam Mode 
+- [x] Low RAM Optimization  
+- [x] Exam Mode  
 - [ ] Voice Interface *(future scope)*  
 - [ ] AI Chatbot *(future scope)*
 
@@ -77,18 +90,33 @@
 
 ## 🤝 Contributing
 
-We welcome PRs! Please follow the contribution guidelines in `CONTRIBUTING.md`.
+We welcome PRs! 
 
 ---
 
 ## 📜 License
 
-EduLite OS is released under the **MIT License**. See `LICENSE` file for details.
+EduLite OS is released under the **GPL-3.0 license**. 
 
 ---
 
 ## ❤️ Special Thanks
 
-To the open-source Linux and education community for their support and inspiration.
+To the open-source Linux, Kolibri, and educational software communities for their support and inspiration.
 
-EOF
+---
+## 🤝 Contributors
+
+Thanks to these amazing people for making EduLite OS possible:
+
+
+
+| Name               | GitHub Profile                                     |
+|--------------------|----------------------------------------------------|
+| Rohit Kshirsagar   | [@rohitkshirsagar19](https://github.com/rohitkshirsagar19) |
+| Parth Lhase        | [@LhaseParth2610](https://github.com/LhaseParth2610)       |
+| Rishabh Kothari    | [@RishabhK103](https://github.com/RIshabhK103)             |
+| Sarthak Dongare    | [@Frosty-8](https://github.com/Frosty-8)                   |
+
+        
+
